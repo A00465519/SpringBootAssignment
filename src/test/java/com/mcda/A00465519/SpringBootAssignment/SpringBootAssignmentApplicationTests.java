@@ -1,0 +1,13 @@
+package com.mcda.A00465519.SpringBootAssignment;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class SpringBootAssignmentApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
