@@ -2,7 +2,7 @@ package com.mcda.A00465519.SpringBootAssignment.api;
 
 import com.mcda.A00465519.SpringBootAssignment.model.Person;
 import com.mcda.A00465519.SpringBootAssignment.service.PersonService;
-import jakarta.websocket.server.PathParam;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +21,7 @@ public class PersonController {
     }
 
     @PostMapping("/person")
-    public void addPerson(@RequestBody Person person) {
+    public void addPerson(@NotNull @RequestBody Person person) {
         personService.addPerson(person);
     }
 
@@ -31,12 +31,12 @@ public class PersonController {
     }
 
     @GetMapping("/person/{id}")
-    public Person getPersonByID(@PathVariable UUID id) {
+    public Person getPersonByID(@NotNull @PathVariable UUID id) {
         return personService.getPersonByID(id);
     }
 
     @DeleteMapping("/person/{id}")
-    public void deletePerson(@PathVariable("id") UUID id) {
+    public void deletePerson(@NotNull @PathVariable("id") UUID id) {
         personService.deletePerson(id);
     }
 

@@ -2,14 +2,13 @@ package com.mcda.A00465519.SpringBootAssignment.api;
 
 import com.mcda.A00465519.SpringBootAssignment.model.Hotel;
 import com.mcda.A00465519.SpringBootAssignment.service.HotelService;
-import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
 
-@RequestMapping("api/v1/hotel")
+@RequestMapping("api/v1")
 @RestController
 public class HotelController {
     private final HotelService hotelService;
@@ -19,27 +18,27 @@ public class HotelController {
         this.hotelService = hotelService;
     }
 
-    @PostMapping
+    @PostMapping("/hotel")
     public void addHotel(@RequestBody Hotel hotel) {
         hotelService.addHotel(hotel);
     }
 
-    @GetMapping
+    @GetMapping("/hotel")
     public List<Hotel> getAllHotels() {
         return hotelService.getAllHotels();
     }
 
-    @GetMapping("/{id}")
-    public Hotel getHotelByID(@PathParam("id") UUID id) {
+    @GetMapping("/hotel/{id}")
+    public Hotel getHotelByID(@PathVariable("id") UUID id) {
         return hotelService.getHotelByID(id);
     }
 
-    @DeleteMapping("/{id}")
-    public void deleteHotel(@PathParam("id") UUID id) {
+    @DeleteMapping("/hotel/{id}")
+    public void deleteHotel(@PathVariable("id") UUID id) {
         hotelService.deleteHotel(id);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/hotel")
     public void deleteAllHotels() {
         hotelService.deleteAllHotels();
     }

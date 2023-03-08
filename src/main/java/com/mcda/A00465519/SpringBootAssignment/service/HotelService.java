@@ -11,7 +11,9 @@ import java.util.UUID;
 
 @Service
 public class HotelService {
+
     private final HotelDAO hotelDAO;
+
     @Autowired
     public HotelService(HotelDAO hotelDAO) {
         this.hotelDAO = hotelDAO;
@@ -40,8 +42,8 @@ public class HotelService {
         Hotel hotel = this.getHotelByID(id);
         hotelDAO.delete(hotel);
     }
+
     public void deleteAllHotels() {
         hotelDAO.deleteAll();
     }
-
 }

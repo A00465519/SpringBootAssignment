@@ -15,19 +15,19 @@ public class Hotel {
     private final String name;
     private final String phone;
     private final String email;
-    private final Integer numberOfRoomsAvailable;
+    private final Integer roomsAvailable;
 
     public Hotel(@JsonProperty("id") UUID id, @JsonProperty("name") String name,
                  @JsonProperty("phone") String phone, @JsonProperty("email") String email,
-                 @JsonProperty("numberOfRoomsAvailable") Integer numberOfRoomsAvailable) {
+                 @JsonProperty("roomsAvailable") Integer roomsAvailable) {
         this.id = id;
         this.name = name;
         this.phone = phone;
         this.email = email;
-        this.numberOfRoomsAvailable = numberOfRoomsAvailable;
+        this.roomsAvailable = roomsAvailable;
     }
 
-    public UUID getId() {
+    @Id public UUID getId() {
         return id;
     }
 
@@ -43,8 +43,8 @@ public class Hotel {
         return email;
     }
 
-    public Integer getNumberOfRoomsAvailable() {
-        return numberOfRoomsAvailable;
+    public Integer getRoomsAvailable() {
+        return roomsAvailable;
     }
 
 }
