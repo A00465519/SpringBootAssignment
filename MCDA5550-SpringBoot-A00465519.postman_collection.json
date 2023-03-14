@@ -1,0 +1,570 @@
+{
+	"info": {
+		"_postman_id": "6ee7c3d4-8e55-4517-bd26-d12fe63a716f",
+		"name": "MCDA5550-SpringBoot-A00465519",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11082361"
+	},
+	"item": [
+		{
+			"name": "Person",
+			"item": [
+				{
+					"name": "Get All Persons",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/v1/person",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Person By ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/v1/person/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"person",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "47b94e1b-9657-4291-9728-1811cc2e5e17"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Person",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"user1\",\r\n  \"phone\": \"1234567890\",\r\n  \"email\": \"user1@localhost.com\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/person",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Person By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"user1\",\r\n  \"phone\": \"1234567890\",\r\n  \"email\": \"user1@localhost.com\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/person",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All Person",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"user1\",\r\n  \"phone\": \"1234567890\",\r\n  \"email\": \"user1@localhost.com\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/person",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"person"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotels",
+			"item": [
+				{
+					"name": "Get All Hotels",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/v1/hotel",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"hotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Hotel By ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/v1/hotel/f552832a-58bc-48db-897c-c3775e63d560",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"hotel",
+								"f552832a-58bc-48db-897c-c3775e63d560"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Hotel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"hotel yamma\",\r\n  \"phone\": \"1234567890\",\r\n  \"email\": \"alpha@hotel.com\",\r\n  \"roomsAvailable\": 100\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/hotel",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"hotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Hotel By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"user1\",\r\n  \"phone\": \"1234567890\",\r\n  \"email\": \"user1@localhost.com\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/hotel/f552832a-58bc-48db-897c-c3775e63d560",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"hotel",
+								"f552832a-58bc-48db-897c-c3775e63d560"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All Hotels",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"user1\",\r\n  \"phone\": \"1234567890\",\r\n  \"email\": \"user1@localhost.com\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/hotel",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"hotel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservations",
+			"item": [
+				{
+					"name": "Get All Reservations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/v1/reservation",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reservation By ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/v1/reservation/03e953c9-0690-4d6a-a50a-3ed6a6ca8521",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reservation",
+								"03e953c9-0690-4d6a-a50a-3ed6a6ca8521"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Reservation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"personID\": \"a781d5c2-0965-4730-b28c-e24f7bb9d77b\",\r\n  \"hotelID\": \"f14ca2de-cf04-4266-bb8f-e85a84e3ff13\",\r\n  \"numberOfRoomsBooked\": 2\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/reservation",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Reservation By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"user1\",\r\n  \"phone\": \"1234567890\",\r\n  \"email\": \"user1@localhost.com\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/reservation/f552832a-58bc-48db-897c-c3775e63d560",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reservation",
+								"f552832a-58bc-48db-897c-c3775e63d560"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify Reservations",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "api_key",
+								"value": "3kYqv7xPCA6PYcKPCMAv",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"9cc5adc4-e13b-47bd-813f-2b1d5b9cd161\",\r\n    \"numberOfRoomsBooked\": 6\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/reservation",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Swagger",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "api_key",
+						"value": "3kYqv7xPCA6PYcKPCMAv",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/api-docs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"api-docs",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

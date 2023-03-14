@@ -4,11 +4,13 @@ import com.mcda.A00465519.SpringBootAssignment.dao.ReservationDAO;
 import com.mcda.A00465519.SpringBootAssignment.model.Reservation;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+@Service
 public class ReservationService {
     private final ReservationDAO reservationDAO;
 
@@ -44,7 +46,7 @@ public class ReservationService {
     public void modifyReservation(@NotNull Reservation reservation) {
         Reservation currentReservation = getReservationByID(reservation.getId());
         Reservation newReservation = new Reservation(currentReservation.getId(),
-                reservation.getUid(), reservation.getHid(), reservation.getNumberOfRoomsBooked());
+                currentReservation.getUid(), currentReservation.getHid(), reservation.getNumberOfRoomsBooked());
         reservationDAO.save(newReservation);
     }
 }

@@ -1,8 +1,6 @@
 package com.mcda.A00465519.SpringBootAssignment.api;
 
-import com.mcda.A00465519.SpringBootAssignment.model.Person;
 import com.mcda.A00465519.SpringBootAssignment.model.Reservation;
-import com.mcda.A00465519.SpringBootAssignment.service.PersonService;
 import com.mcda.A00465519.SpringBootAssignment.service.ReservationService;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.UUID;
 
+@RequestMapping("api/v1/")
+@RestController
 public class ReservationController {
     private final ReservationService reservationService;
 
